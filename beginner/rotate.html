@@ -1,0 +1,23 @@
+<script>
+
+
+function rotateAddFive(numbers) {
+
+	var array=numbers;
+	document.write(array + "<br>");
+	var newNumbers = [];
+
+	array.push(array.shift());
+
+
+
+	for (var x in array) {
+		array[x] = array[x] + 5;
+		newNumbers.push(array[x]);
+	}
+	document.write(newNumbers);
+}
+
+rotateAddFive([1,2,3]);
+
+</script>
